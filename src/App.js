@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/styles/App.css'
+import ChangeColor from './components/ChangeColor/ChangeColor'
+import Checkbox from './components/Checkbox/Checkbox'
+import MessageHover from './components/MessageHover/MessageHover'
+import MessageLog from './components/MessageLog/MessageLog'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <article className="App">
+      <mark>
+        1. Create a button component that logs a message to the console when
+        clicked.
+        <MessageLog />
+      </mark>
+      <mark>
+        2.Create a checkbox component that logs a message to the console when
+        checked or unchecked.
+      </mark>
+      <div>
+        <Checkbox />
+      </div>
+      <mark>
+        5.Create a component that displays a message when the mouse hovers over
+        it.
+      </mark>
+      <MessageHover />
+      <mark>
+        6.Create a component that changes its text color when clicked.
+      </mark>
+      <ChangeColor />
+    </article>
+  )
 }
 
-export default App;
+export default App
