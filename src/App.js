@@ -1,6 +1,7 @@
 import './assets/styles/App.css'
 import ChangeColor from './components/ChangeColor/ChangeColor'
 import Checkbox from './components/Checkbox/Checkbox'
+import CountdownTimer from './components/CountdownTimer/CountdownTimer'
 import MessageHover from './components/MessageHover/MessageHover'
 import MessageLog from './components/MessageLog/MessageLog'
 
@@ -28,6 +29,10 @@ function App() {
         6.Create a component that changes its text color when clicked.
       </mark>
       <ChangeColor />
+      <mark>
+        12.Create a component that displays a countdown timer when clicked.
+        <CountdownTimer />
+      </mark>
     </article>
   )
 }
